@@ -1,0 +1,18 @@
+module Netlist1_TB;
+    reg [3:0] A, B;
+    wire [3:0] K;
+    wire [4:0] TK;
+    wire [3:0] S;
+    wire Count;
+    Netlist1 uut1 (.A(A), .B(B), .K(K), .TK(TK));
+    Netlist2 uut2 (
+    .K3(TK[3]), .K2(TK[2]), .K1(TK[1]), .K0(TK[0]),
+     .A0(A[0]), .B0(B[0]), .Cin(TK[4]), 
+  .S(S), .Cout(Cout));
+    initial begin
+        A = 4'b1001; B = 4'b0100;
+        #100;
+        $display ("Sum = %b, Cout = %b", S, Cout);
+        $finish;
+    end
+endmodule
