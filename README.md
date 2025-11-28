@@ -53,7 +53,7 @@ This work was completed as part of my M.Tech in VLSI Design at GITAM University 
 ## Author
 **BODTEE AKSHAT RAO**  
 M.Tech VLSI Design | GITAM University  
- bodteeakshatrao@gmail.com  
+Email: bodteeakshatrao@gmail.com  
 [LinkedIn](https://linkedin.com/in/bodtee-akshat-rao-vlsi)
 
 ## Tools Used
